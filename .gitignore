@@ -1,0 +1,22 @@
+# Python environment
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Data files (avoid committing massive datasets to git)
+*.parquet
+!data/sample_eval.parquet
+!data/sample_batch_demo.csv
+*.csv
+!data/sample_batch_demo.csv
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+
+# Streamlit local credentials
+.streamlit/secrets.toml

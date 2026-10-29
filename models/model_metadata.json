@@ -1,0 +1,217 @@
+{
+  "project_name": "Streamlit App for Network Intrusion Detection",
+  "model_type": "RandomForestClassifier",
+  "task": "Network Intrusion Detection",
+  "training_samples": 175341,
+  "test_samples": 82332,
+  "fit_duration_seconds": 5.07,
+  "evaluation_metrics": {
+    "accuracy": 0.8965,
+    "precision": 0.8757,
+    "recall": 0.9465,
+    "f1_score": 0.9097,
+    "roc_auc": 0.9789,
+    "multiclass_accuracy": 0.6587,
+    "confusion_matrix": [
+      [
+        30907,
+        6093
+      ],
+      [
+        2425,
+        42907
+      ]
+    ],
+    "classification_report": {
+      "Normal": {
+        "precision": 0.9272470898835954,
+        "recall": 0.8353243243243244,
+        "f1-score": 0.8788886993118353,
+        "support": 37000.0
+      },
+      "Attack": {
+        "precision": 0.8756530612244898,
+        "recall": 0.9465057795817524,
+        "f1-score": 0.9097019039138362,
+        "support": 45332.0
+      },
+      "accuracy": 0.8965408346693874,
+      "macro avg": {
+        "precision": 0.9014500755540427,
+        "recall": 0.8909150519530384,
+        "f1-score": 0.8942953016128358,
+        "support": 82332.0
+      },
+      "weighted avg": {
+        "precision": 0.8988394172025652,
+        "recall": 0.8965408346693874,
+        "f1-score": 0.8958544500651014,
+        "support": 82332.0
+      }
+    }
+  },
+  "top_features": [
+    [
+      "dload",
+      0.08767326899935693
+    ],
+    [
+      "dmean",
+      0.07273978850325065
+    ],
+    [
+      "rate",
+      0.06651616304283127
+    ],
+    [
+      "sload",
+      0.05510137712675195
+    ],
+    [
+      "ackdat",
+      0.05344243113420948
+    ],
+    [
+      "dur",
+      0.052602992696503065
+    ],
+    [
+      "sbytes",
+      0.05010331874169556
+    ],
+    [
+      "state",
+      0.0491576433030179
+    ],
+    [
+      "smean",
+      0.042774413338415695
+    ],
+    [
+      "tcprtt",
+      0.041106845335017274
+    ],
+    [
+      "dbytes",
+      0.04052770756324434
+    ],
+    [
+      "synack",
+      0.039288026578467417
+    ],
+    [
+      "dinpkt",
+      0.03582122860080913
+    ],
+    [
+      "dpkts",
+      0.03480029415877339
+    ],
+    [
+      "proto",
+      0.03228820947069794
+    ],
+    [
+      "sinpkt",
+      0.03159118419483672
+    ],
+    [
+      "sjit",
+      0.02610515657875291
+    ],
+    [
+      "spkts",
+      0.02608186649873683
+    ],
+    [
+      "ct_dst_sport_ltm",
+      0.024133277047200804
+    ],
+    [
+      "service",
+      0.02224170938164096
+    ]
+  ],
+  "all_feature_names": [
+    "proto",
+    "service",
+    "state",
+    "dur",
+    "spkts",
+    "dpkts",
+    "sbytes",
+    "dbytes",
+    "rate",
+    "sload",
+    "dload",
+    "sloss",
+    "dloss",
+    "sinpkt",
+    "dinpkt",
+    "sjit",
+    "djit",
+    "swin",
+    "stcpb",
+    "dtcpb",
+    "dwin",
+    "tcprtt",
+    "synack",
+    "ackdat",
+    "smean",
+    "dmean",
+    "trans_depth",
+    "response_body_len",
+    "ct_src_dport_ltm",
+    "ct_dst_sport_ltm",
+    "is_ftp_login",
+    "ct_ftp_cmd",
+    "ct_flw_http_mthd",
+    "is_sm_ips_ports"
+  ],
+  "categorical_features": [
+    "proto",
+    "service",
+    "state"
+  ],
+  "numerical_features": [
+    "dur",
+    "spkts",
+    "dpkts",
+    "sbytes",
+    "dbytes",
+    "rate",
+    "sload",
+    "dload",
+    "sloss",
+    "dloss",
+    "sinpkt",
+    "dinpkt",
+    "sjit",
+    "djit",
+    "swin",
+    "stcpb",
+    "dtcpb",
+    "dwin",
+    "tcprtt",
+    "synack",
+    "ackdat",
+    "smean",
+    "dmean",
+    "trans_depth",
+    "response_body_len",
+    "ct_src_dport_ltm",
+    "ct_dst_sport_ltm",
+    "is_ftp_login",
+    "ct_ftp_cmd",
+    "ct_flw_http_mthd",
+    "is_sm_ips_ports"
+  ],
+  "hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 16,
+    "min_samples_split": 10,
+    "min_samples_leaf": 4,
+    "class_weight": "balanced",
+    "random_state": 42
+  }
+}
